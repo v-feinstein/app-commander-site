@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Setup Guide — App Commander</title>
+  <meta name="description" content="How to set up App Commander's launch shortcut, and the optional Back to App Commander shortcut.">
+  <link rel="icon" href="../images/icon.png" type="image/png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../"><img class="mark" src="../images/icon.png" alt=""> App Commander</a>
+    <nav class="nav">
+      <a href="./" aria-current="page">Setup</a>
+      <a href="../support/">Support</a>
+      <a class="hide-sm" href="../privacy/">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap doc">
+  <h1>Setup Guide</h1>
+  <p class="meta">About a minute. App Commander walks you through the same steps on first launch.</p>
+
+  <div class="callout">
+    <strong>Why a shortcut?</strong> iOS doesn't let one app open another by name. Apple's Shortcuts app can, so App Commander hands each launch to a small shortcut you add once. Apps that support direct links open without it.
+  </div>
+
+  <h2>Before you start</h2>
+  <p>You need Apple's <strong>Shortcuts</strong> app. It comes with iOS, but it can be deleted; if it's missing, get it free from the <a href="https://apps.apple.com/app/shortcuts/id915249334">App Store</a>. App Commander tells you if it isn't installed.</p>
+
+  <h2>1. Add the launch shortcut</h2>
+  <ol>
+    <li>In App Commander, open <strong><svg class="gear" viewBox="0 0 24 24" role="img" aria-label="Settings"><circle cx="12" cy="12" r="8.6" fill="none" stroke="currentColor" stroke-width="3.2" stroke-dasharray="3.38 3.38"/><circle cx="12" cy="12" r="6.6" fill="none" stroke="currentColor" stroke-width="2.6"/><circle cx="12" cy="12" r="2.4" fill="none" stroke="currentColor" stroke-width="2"/></svg> → Shortcut Setup</strong> (or follow the first-launch steps) and tap <strong>Add Launch Shortcut</strong>.</li>
+    <li>Shortcuts opens and shows <strong>App Commander Launcher</strong>. Tap <strong>Add Shortcut</strong>.</li>
+  </ol>
+  <!-- TODO: <img src="../images/setup-add.png" alt="Add Shortcut screen in Shortcuts"> -->
+  <div class="figure">Screenshot: the “Add Shortcut” screen in Shortcuts</div>
+
+  <h2>2. Turn on its automation</h2>
+  <p>Shortcuts adds automations switched off, so this one step is yours:</p>
+  <ol>
+    <li>In Shortcuts, go to <strong>Automation</strong>.</li>
+    <li>Switch on <strong>When App Commander is opened or closed</strong>.</li>
+    <li>Go back to App Commander. In Shortcut Setup, the status turns green: <strong>Automation connected</strong>.</li>
+  </ol>
+  <!-- TODO: <img src="../images/setup-automation.png" alt="The Automation list in Shortcuts with the App Commander switch"> -->
+  <div class="figure">Screenshot: the Automation list in Shortcuts</div>
+
+  <h2>3. The first launch</h2>
+  <p>The first time App Commander opens an app this way, Shortcuts may ask: <em>“Allow ‘App Commander Launcher’ to output 1 app?”</em> Tap <strong>Always Allow</strong> so it doesn't ask again.</p>
+
+  <h2>Optional: come back to App Commander</h2>
+  <p>If you'd like App Commander to reopen when you leave an app by going to the Home Screen:</p>
+  <ol>
+    <li>In <strong><svg class="gear" viewBox="0 0 24 24" role="img" aria-label="Settings"><circle cx="12" cy="12" r="8.6" fill="none" stroke="currentColor" stroke-width="3.2" stroke-dasharray="3.38 3.38"/><circle cx="12" cy="12" r="6.6" fill="none" stroke="currentColor" stroke-width="2.6"/><circle cx="12" cy="12" r="2.4" fill="none" stroke="currentColor" stroke-width="2"/></svg> → Shortcut Setup</strong>, tap <strong>Add Return Shortcut</strong>, then <strong>Add Shortcut</strong>.</li>
+    <li>In Shortcuts, go to <strong>Automation</strong> and tap <strong>When Settings is closed</strong>. Choose the apps you open from App Commander instead of Settings.</li>
+    <li>Don't add App Commander or Shortcuts themselves.</li>
+    <li>Back in <strong>Automation</strong>, switch it on.</li>
+  </ol>
+  <p>Switching straight to another app (for example, swiping along the bottom of the screen) doesn't trigger it; only going to the Home Screen does.</p>
+
+  <h2>Troubleshooting</h2>
+  <h3>Status stays “Not detected yet”</h3>
+  <p>In Shortcuts, go to <strong>Automation</strong> and check that <strong>When App Commander is opened or closed</strong> is switched on. Then switch away from App Commander and back. Each device needs its own setup: automations don't turn on by themselves when shortcuts sync through iCloud.</p>
+  <h3>“Couldn't find the shortcut”</h3>
+  <p>If you renamed the shortcut, or Shortcuts added a number because you already had one (“App Commander Launcher 1”), enter its exact name in <strong><svg class="gear" viewBox="0 0 24 24" role="img" aria-label="Settings"><circle cx="12" cy="12" r="8.6" fill="none" stroke="currentColor" stroke-width="3.2" stroke-dasharray="3.38 3.38"/><circle cx="12" cy="12" r="6.6" fill="none" stroke="currentColor" stroke-width="2.6"/><circle cx="12" cy="12" r="2.4" fill="none" stroke="currentColor" stroke-width="2"/></svg> → Shortcut Setup → Shortcut name</strong>.</p>
+  <h3>“Open App failed because no app was specified”</h3>
+  <p>The app you tapped isn't installed on this device. Remove it from the page, or install it.</p>
+  <h3>Still stuck?</h3>
+  <p>See <a href="../support/">Support</a>, or write to <a href="mailto:support@app-commander.com">support@app-commander.com</a>.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav>
+      <a href="./">Setup</a>
+      <a href="../support/">Support</a>
+      <a href="../privacy/">Privacy</a>
+      <a href="https://feingames.com">More apps by FeinGames</a>
+    </nav>
+    <span class="copy">© 2026 FeinGames</span>
+  </div>
+</footer>
+
+</body>
+</html>
