@@ -218,3 +218,12 @@ section .sub { color: var(--text-2); margin: 0 0 32px; max-width: 40em; font-siz
 
 /* The app's gear button, drawn inline in instructions ("⚙︎ → Shortcut Setup"). */
 .gear { width: 1.1em; height: 1.1em; vertical-align: -0.18em; margin-right: 0.08em; }
+
+/* ---------- iPhone Duo page ---------- */
+
+.duo-hero { padding: 56px 0 8px; text-align: center; }
+.duo-hero h1 { font-size: clamp(34px, 5.5vw, 54px); line-height: 1.08; margin: 0 0 14px; letter-spacing: -0.02em; }
+.duo-hero .lede { font-size: 20px; color: var(--text-2); margin: 0 auto 32px; max-width: 34em; }
+/* The recording has a white background, so it sits on a white card in dark mode too. */
+.duo-video { display: block; width: 100%; max-width: 920px; height: auto; margin: 0 auto; background: #fff; border-radius: var(--radius); }
+.duo-hero .cta { display: flex; justify-content: center; margin-top: 28px; }
